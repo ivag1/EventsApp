@@ -1,15 +1,17 @@
+import 'dart:io';
+
 class Event {
   final String name;
-  final String imageUrl;
+  final String description;
   final String date;
   final String time;
-  final String description;
+  final File imageFile; // Changed from XFile? to File
 
   Event({
     required this.name,
-    required this.imageUrl,
+    required this.description,
     required this.date,
     required this.time,
-    required this.description,
+    required this.imageFile,
   });
 }
